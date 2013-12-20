@@ -1,0 +1,9 @@
+## Prerequisite ##
+
+gem install jekyll
+gem install kramdown
+
+## Building ##
+
+jekyll serve
+
