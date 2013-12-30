@@ -4,3 +4,33 @@ kramdown:
   parse_block_html: true
 pygments: true
 exclude: [README]
+
+picture:
+  source: "assets/images/_fullsize/"
+  output: "assets/images/generated/"
+  markup: "picturefill"
+  presets:
+    default:
+      ppi: [1, 1.5]
+      attr:
+        itemprop: "image"
+        class: "image-responsive"
+      source_default:
+         width: 500
+         height: 500
+    img-featurette:
+      ppi: [1, 1.5]
+      att:
+        class: "featurette-image img-responsive"
+      source_default:
+        width: 500
+        height: 500 
+    img-circle:
+      ppi: [1, 1.5]
+      att:
+        class: "image-circle"
+      source_default:
+        width: 140
+        height: 140
+        
+
