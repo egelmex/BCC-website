@@ -6,6 +6,26 @@
   height: 376px;
   margin-bottom: 60px;
 }
+/* For attributing images from other sources  */
+.carousel-atr {
+    text-align: right;
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .carousel-atr {
+	text-align: center;
+	margin-top: 15px;
+    }
+}
+@media (min-width: 901px) {
+    .carousel-atr {
+	text-align: right;
+	margin-top: 0px;
+    }
+}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -14,15 +34,20 @@
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 376px;
-  background-color: #777;
+  background-color: #F0F0F0;
+  overflow: hidden;
+}
+.carousel-inner > .item > #logo {
+    height: 376px;
+    padding-top: 76px;
 }
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 376px;
-  padding-top:76px;
+  height: 500px;
+  //padding-top:76px;
 }
 
 /* navbar */

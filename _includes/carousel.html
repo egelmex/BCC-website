@@ -1,0 +1,44 @@
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img id="logo" src="assets/images/logo-with-text.svg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          {% picture img-carousel tris-linnell-arduino-mega.jpg %}
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Barcamp is an Unconference</h1>
+              <p>BarCamp Canterbury is a free unconference in the heart of the historic city of Canterbury.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+	      <div class="carousel-atr">Image CC NC-BY-SA: <a href="http://www.flickr.com/photos/jonnyentropy/8720085645/sizes/o/">Tris Linnell</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          {% picture img-carousel tris-linnell-old-pc.jpg %}
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>You provide the content</h1>
+              <p>As an unconference, the content of BarCamp Canterbury is provided by you, the attendees!</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+	      <div class="carousel-atr">Image CC NC-BY-SA: <a href="http://www.flickr.com/photos/jonnyentropy/8721282766/sizes/o/">Tris Linnell</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
