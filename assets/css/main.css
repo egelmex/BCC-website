@@ -6,6 +6,26 @@
   height: 376px;
   margin-bottom: 60px;
 }
+/* For attributing images from other sources  */
+.carousel-atr {
+    text-align: right;
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .carousel-atr {
+	text-align: center;
+	margin-top: 15px;
+    }
+}
+@media (min-width: 901px) {
+    .carousel-atr {
+	text-align: right;
+	margin-top: 0px;
+    }
+}
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
