@@ -3,13 +3,86 @@ layout: home
 title: Home
 weight: 0 
 ---
-<!--
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
--->
+
+	
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+	  {% picture img-circle sav.jpg %}
+          <h2>What</h2>
+	  <p>BarCamp Canterbury is a free unconference in the heart of the historic city of Canterbury.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          {% picture img-circle cathedral.jpg %}
+          <h2>Where</h2>
+	  <p>Based in the historic city of Canterbury in the heart of Kent.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          {% picture img-circle easter.jpg %}
+          <h2>When</h2>
+          <p>Some time around easter. Date should be finalised soon.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">
+
+BarCamp Canterbury is an *unconference* that is a completely *free* to attend and based loosely around the theme of *technology*.
+
+As an unconference, the content of BarCamp Canterbury is provided by you, the attendees!  Meet with like-minded people, share your ideas and engage in discussions. Do you have a topic you’d like to present? Sign up on the day to give a talk.
+
+This year’s BarCamp Canterbury promises to be bigger and better than before. There will be a hackspace, social area for chilling out, and several rooms for people to give presentations and host discussions.
+
+BarCamp Canterbury is what you make of it…
+
+This year’s event follows successful BarCamp Canterbury events in 2011 and 2012, which welcomed over 150 delegates from all around the UK (and further afield).
+        </div>
+        <div class="col-md-5">
+		{% picture img-featurette sav.jpg %}
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+		{% picture img-featurette cathedral.jpg %}
+<!--		<img class="featurette-image img-responsive" src="/assets/images/cathedral.jpg" alt="Generic placeholder image" width="500" height="500"-->
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+		{% picture img-featurette easter.jpg %}
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
