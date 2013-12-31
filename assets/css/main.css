@@ -112,4 +112,8 @@
   margin-right: 5px;
 }
 
+.featurette-atr {
+    text-align: right;
+}
+
 body    {overflow-y:scroll;}
