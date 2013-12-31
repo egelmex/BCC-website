@@ -240,7 +240,9 @@ module Jekyll
           i.crop "#{gen_width}x#{gen_height}+0+0"
         end
 
-        image.write gen_dest_file
+        if not image.write gen_dest_file then
+          puts "ERROR"
+        end
       end
 
       # Return path relative to the site root for html

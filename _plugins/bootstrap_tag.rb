@@ -10,7 +10,7 @@ module Jekyll
       @content = Liquid::Template.parse(super).render(context)
 output = <<-eos
 <div class=\"col-md-#{@text}\">
-#{@content}
+#{@content.strip()}
 </div>
 eos
 output
@@ -30,7 +30,7 @@ module Jekyll
       @content = super
 <<-eos
 <div class="row #{@text}">
-#{@content}
+#{@content.strip()}
 </div>
 eos
     end
