@@ -8,7 +8,7 @@ $(function() {
 		}
 	
 		var locationPath = filterPath(location.pathname);
-    var scrollElem = scrollableElement('html', 'body', 'div', 'hr');
+                var scrollElem = scrollableElement('html', 'body', 'div', 'hr');
 	
 		// Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
 		$('a[href*=#]').each(function() {
