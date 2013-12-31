@@ -5,8 +5,8 @@ kramdown:
 pygments: true
 exclude: [README]
 picture:
-  source: "assets/images/_fullsize"
-  output: "assets/images/generated"
+  source: assets/images/_fullsize
+  output: assets/images/generated
   markup: "picturefill"
   presets:
     default:
@@ -31,5 +31,15 @@ picture:
       source_default:
         width: "140"
         height: "140"
-        
-
+    img-carousel:
+      ppi: [1, 1.5]
+      source_default:
+        width: "1920"
+        height: "500"
+    icon:
+      ppi: [1, 1.5]
+      attr:
+        class: "icon"
+        itemprop: "image"
+      source_default:
+        height: "35px"

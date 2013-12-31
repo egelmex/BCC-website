@@ -11,6 +11,7 @@
     text-align: right;
     position: absolute;
     width: 100%;
+    z-index: 20;
 }
 
 @media (max-width: 900px) {
@@ -56,6 +57,16 @@
   position: absolute;
   top: 10px;
   width: 100%;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    vertical-align: middle;
+    padding: 10px;
+    padding-top: 13px;
+}
+.navbar-brand > img {
+    margin-top: -2px;
 }
 
 .navbar-form {
