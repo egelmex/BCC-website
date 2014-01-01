@@ -123,10 +123,16 @@
     .navbar-brand {
 	font-size: 15px;
     }
+    .logo {
+	width: 22px;
+    }
 }
 @media (min-width: 471px) {
     .navbar-brand {
 	font-size: 25px;
+    }
+    .logo {
+	width: 32px;
     }
 }
 
