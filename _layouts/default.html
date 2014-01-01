@@ -29,11 +29,11 @@
     <link href="/assets/css/main.css" rel="stylesheet">
   </head>
   {% include navbar.html %}
-
-      <div class="container first">
-{{ content }}
-	</div>
-
+  {% include header.html %}
+  <div class="container first">
+    {{ content }}
+  </div>
+  
 
     {% include js.html %}
   </body>
