@@ -115,5 +115,8 @@
 .featurette-atr {
     text-align: right;
 }
+.pageHeader {
+    max-width: 100%
+}
 
 body    {overflow-y:scroll;}
