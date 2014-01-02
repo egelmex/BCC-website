@@ -1,11 +1,10 @@
 ---
-layout: default 
+layout: map 
 title: Visiting 
 ---
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
 
-## Visiting ##
-
-Getting to Canterbury
+## Getting to Canterbury ##
 
 {% row %}
 {% span 6 %}
@@ -45,3 +44,27 @@ If you don’t live in Canterbury, you’re going to need somewhere to stay duri
 * [Camping and caravaning](http://www.campingandcaravanningclub.co.uk/siteseekerlite/aspx/details.aspx?id=7050)
     * Camping from around £17
 * Find a Canterburian to stay with! Feel free to use the comments to find people with floor space.
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+<script>
+	var map = L.map('map').setView([51.279528, 1.087646], 13);
+L.tileLayer('http://{s}.tile.cloudmade.com/e4d9c2e828924bc485229d45d734ade2/997/256/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+    maxZoom: 18
+}).addTo(map);
+
+var myIcon = L.icon({
+    iconUrl: '/assets/images/generated/barcamp4-logo-35x35-9be98f.png',
+    iconSize: [32, 32],
+    iconAnchor: [22, 32],
+    popupAnchor: [-3, -32],
+    shadowSize: [68, 32],
+    shadowAnchor: [22, 32]
+});
+
+var marker_woolf = L.marker([51.300, 1.071]).addTo(map);
+marker_woolf.bindPopup("<b>Woolf College!</b><br>The Venue.").openPopup();
+
+var marker_parking = L.marker([51.29945, 1.06800], {icon:myIcon}).addTo(map);
+marker_parking.bindPopup("<b>Parking!</b><br>It's free!");
+</script>
