@@ -43,3 +43,10 @@ picture:
         itemprop: "image"
       source_default:
         height: "35px"
+    img-header:
+      ppi: [1, 1.5]
+      attr:
+        data-class: "img-header"
+      source_default:
+        width: "1920px"
+        height: "750px"
