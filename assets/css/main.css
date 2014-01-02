@@ -35,12 +35,10 @@
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 376px;
   background-color: #F0F0F0;
   overflow: hidden;
 }
 .carousel-inner > .item > #logo {
-    height: 376px;
     padding-top: 76px;
 }
 .carousel-inner > .item > img {
@@ -69,10 +67,10 @@
 }
 @media (min-height: 631px) and (min-width: 1024px) {
     .carousel {
-	height: 376px;
+	height: 400px;
     }
     .carousel .item {
-	height: 376px;
+	height: 400px;
     }
     .btn-lg {
         padding: 14px 16px;
