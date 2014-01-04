@@ -3,7 +3,7 @@
 
 /* Carousel base class */
 .carousel {
-  height: 376px;
+  height: 400px;
   margin-bottom: 60px;
 }
 /* For attributing images from other sources  */
@@ -35,23 +35,24 @@
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 376px;
   background-color: #F0F0F0;
   overflow: hidden;
   text-align: center;
 }
+
 .carousel-inner > .item > #logo {
-    height: 376px;
     padding-top: 76px;
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  max-height: 500px;
+  max-height: 400px;
   /*padding-top:76px;*/
 }
+
 @media (max-height: 630px) and (min-width: 1024px) {
     .carousel {
 	height: 320px;
@@ -70,10 +71,10 @@
 }
 @media (min-height: 631px) and (min-width: 1024px) {
     .carousel {
-	height: 376px;
+	height: 400px;
     }
     .carousel .item {
-	height: 376px;
+	height: 400px;
     }
     .btn-lg {
         padding: 14px 16px;
@@ -115,9 +116,9 @@
 }
 
 @media (min-width: 768px) {
-.navbar-form.navbar-right:last-child {
-  margin-right: 15px;
-}
+    .navbar-form.navbar-right:last-child {
+	margin-right: 15px;
+    }
 }
 
 @media (max-width: 470px) {
@@ -142,25 +143,25 @@
 }
 
 .supporters li {
-  line-height: 32px;
-  min-width: 100px;
-  min-height: 32px;
-  margin: 5px;
-  font-weight: bold;
-  display: inline-block;
-  border: 1px solid black;
-  padding: 10px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
-  list-style: none;
+    line-height: 32px;
+    min-width: 100px;
+    min-height: 32px;
+    margin: 5px;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    list-style: none;
 }
 
 .supporters img {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  margin-right: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
 }
 
 .featurette-atr {
@@ -176,7 +177,12 @@
     .img-header {
 	margin-top: 75px;
     }
-    
+    .carousel {
+        height: 400px;
+    }
+    .carousel .item {
+        height: 400px;
+    }
 }
 @media (min-width: 901px) {
     .img-header {
