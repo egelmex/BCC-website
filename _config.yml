@@ -2,7 +2,7 @@ name: Your New Jekyll Site
 markdown: kramdown
 kramdown:
   parse_block_html: true
-pygments: true
+highligher: null
 exclude: [README]
 picture:
   source: assets/images/_fullsize
