@@ -26,7 +26,7 @@ Staying in Canterbury
 
 {% endspan %}
 
-## Accomodation: ##
+## Accommodation: ##
 
 If you don’t live in Canterbury, you’re going to need somewhere to stay during BarCamp Canterbury. Unfortunately this is one thing we cannot make free, and there is no sleeping in the venue. There are, however, many reasonably-priced establishments in Canterbury. The list below should help you find somewhere to stay (we are not affiliated with any of the companies listed here and take no responsibility for the quality of your sleep).
 
