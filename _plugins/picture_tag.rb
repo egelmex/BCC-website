@@ -87,16 +87,20 @@ module Jekyll
 
       # Prepare ppi variables
       ppi = if instance['ppi'] then instance.delete('ppi').sort.reverse else nil end
+      # this might work??? ppi = instance.delete('ppi'){ |ppi|  [nil] }.sort.reverse
       ppi_sources = {}
 
       # Switch width and height keys to the symbols that generate_image() expects
       instance.each { |key, source|
-        if source['width'] then instance[key][:width] = instance[key].delete('width') end
-        if source['height'] then instance[key][:height] = instance[key].delete('height') end
+        raise "Preset #{key} is missing a width or a height" if !source['width'] and !source['height']
+        instance[key][:width] = instance[key].delete('width') if source['width']
+        instance[key][:height] = instance[key].delete('height') if source['height']
       }
 
       # Store keys in an array for ordering the instance sources
       source_keys = instance.keys
+      # used to escape markdown parsing rendering below
+      markdown_escape = "\ "
 
       # Raise some exceptions before we start expensive processing
       raise "Picture Tag can't find the \"#{markup[:preset]}\" preset. Check picture: presets in _config.yml for a list of presets." unless preset
@@ -138,7 +142,7 @@ module Jekyll
 
       # Generate resized images
       instance.each { |key, source|
-        instance[key][:generated_src] = generate_image(source, site.source, site.dest, settings['source'], settings['output'])
+        instance[key][:generated_src] = generate_image(source, site.source, site.dest, settings['source'], settings['output'], site.config["baseurl"])
       }
 
       # Construct and return tag
@@ -149,41 +153,41 @@ module Jekyll
         # Reference: https://github.com/scottjehl/picturefill/issues/79
         source_keys.reverse.each { |source|
           media = " data-media=\"#{instance[source]['media']}\"" unless source == 'source_default'
-          source_tags += "<span data-src=\"#{instance[source][:generated_src]}\"#{media}></span>\n"
+          source_tags += "#{markdown_escape * 4}<span data-src=\"#{instance[source][:generated_src]}\"#{media}></span>\n"
         }
 
         # Note: we can't indent html output because markdown parsers will turn 4 spaces into code blocks
+        # Note: Added backslash+space escapes to bypass markdown parsing of indented code below -WD
         picture_tag = "<span #{html_attr_string}>\n"\
                       "#{source_tags}"\
-                      "<noscript>\n"\
-                      "<img src=\"#{instance['source_default'][:generated_src]}\" alt=\"#{html_attr['data-alt']}\">\n"\
-                      "</noscript>\n"\
-                      "</span>\n"
+                      "#{markdown_escape * 4}<noscript>\n"\
+                      "#{markdown_escape * 6}<img src=\"#{instance['source_default'][:generated_src]}\" alt=\"#{html_attr['data-alt']}\">\n"\
+                      "#{markdown_escape * 4}</noscript>\n"\
+                      "#{markdown_escape * 2}</span>\n"
 
       elsif settings['markup'] == 'picture'
-
+      
         source_tags = ''
         source_keys.each { |source|
           if source == 'source_default'
-            source_tags += "<img src=\"#{instance[source][:generated_src]}\" alt=\"#{html_attr['alt']}\">\n"
+            source_tags +=  "#{markdown_escape * 4}<img src=\"#{instance[source][:generated_src]}\" alt=\"#{html_attr['alt']}\">\n"
           else
-            source_tags += "<source src=\"#{instance[source][:generated_src]}\" media=\"#{instance[source]['media']}\">\n"
+            source_tags += "#{markdown_escape * 4}<source src=\"#{instance[source][:generated_src]}\" media=\"#{instance[source]['media']}\">\n"
           end
         }
 
         # Note: we can't indent html output because markdown parsers will turn 4 spaces into code blocks
         picture_tag = "<picture #{html_attr_string}>\n"\
                       "#{source_tags}"\
-                      "<p>#{html_attr['alt']}</p>\n"\
-                      "</picture>"
+                      "#{markdown_escape * 4}<p>#{html_attr['alt']}</p>\n"\
+                      "#{markdown_escape * 2}</picture>"
       end
 
         # Return the markup!
         picture_tag
     end
 
-    def generate_image(instance, site_source, site_dest, image_source, image_dest)
-
+    def generate_image(instance, site_source, site_dest, image_source, image_dest, baseurl)
       image = MiniMagick::Image.open(File.join(site_source, image_source, instance[:src]))
       digest = Digest::MD5.hexdigest(image.to_blob).slice!(0..5)
 
@@ -218,7 +222,7 @@ module Jekyll
         gen_height = if orig_ratio > gen_ratio then orig_height else orig_width/gen_ratio end
       end
 
-      gen_name = "#{basename}-#{gen_width.round}x#{gen_height.round}-#{digest}#{ext}"
+      gen_name = "#{basename}-#{gen_width.round}by#{gen_height.round}-#{digest}#{ext}"
       gen_dest_dir = File.join(site_dest, image_dest, image_dir)
       gen_dest_file = File.join(gen_dest_dir, gen_name)
 
@@ -231,7 +235,7 @@ module Jekyll
         FileUtils.mkdir_p(gen_dest_dir) unless File.exist?(gen_dest_dir)
 
         # Let people know their images are being generated
-        puts "Generating #{gen_dest_dir}/#{gen_name}"
+        puts "Generating #{gen_name}"
 
         # Scale and crop
         image.combine_options do |i|
@@ -240,13 +244,11 @@ module Jekyll
           i.crop "#{gen_width}x#{gen_height}+0+0"
         end
 
-        if not image.write gen_dest_file then
-          puts "ERROR"
-        end
+        image.write gen_dest_file
       end
 
       # Return path relative to the site root for html
-      Pathname.new(File.join('/', image_dest, image_dir, gen_name)).cleanpath
+      Pathname.new(File.join(baseurl, image_dest, image_dir, gen_name)).cleanpath
     end
   end
 end
