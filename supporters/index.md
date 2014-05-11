@@ -41,7 +41,7 @@ It costs as little as £1 to become a supporter, and have your name enshrined on
 * £2 gets your name and a photo (32×32).
 * £5 gets your name, a photo (32×32) and a link to what ever you want.
 * £10 gets your name, a photo (32×32), a link to what ever you want and short bit of text (max 32 chars).
-* £10+ You don’t get anything more, just a warm feeling for being awsome.
+* £10+ You don’t get anything more, just a warm feeling for being awesome.
 * £50 Just become a sponsor already
 
 Just pay through our paypal donate button:
