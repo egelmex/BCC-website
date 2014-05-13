@@ -14,7 +14,7 @@ We would like to thank our supporters who have helped to make BarCamp Possible. 
 * <img class="alignnone size-full wp-image-460" alt="out" src="http://i1.wp.com/barcampcanterbury.com/wp-content/uploads/2013/03/out.png?resize=0%2C32" width="32" height="32"><a href="http://canthack.org">Martin Ellis</a > <span>Wondering Geek</span>
 * Alan Callaghan
 * <img src="http://i1.wp.com/barcampcanterbury.com/wp-content/uploads/2013/03/TurricanSprites.png?w=584" width="32" height="32"><a href="http://theunixzoo.co.uk" class="alignnone size-full wp-image-460">Edd Barrett</a> <span>CompSci-Python-OpenBSD-Retro</span>
-* Matt Hoskins
+* <a href="https://www.youtube.com/watch?v=kfVsfOSbJY0">Matt Hoskins</a>
 * <img class="alignnone size-full wp-image-460 grav-hashed grav-hijack" alt="out" src="http://www.gravatar.com/avatar/341c531b300cc77f6195b4fb0cb01b9c?s=32" height="32" id="grav-341c531b300cc77f6195b4fb0cb01b9c-0"><a href="http://canthack.org">Tris Linnell</a> <span>#canthacker</span>
 
 </div>
