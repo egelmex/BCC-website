@@ -12,6 +12,10 @@ We would like to thank our supporters who have helped to make BarCamp Possible. 
 
 <div class="supporters" id="supporters">
 * <img class="alignnone size-full wp-image-460" alt="out" src="http://i1.wp.com/barcampcanterbury.com/wp-content/uploads/2013/03/out.png?resize=0%2C32" width="32" height="32"><a href="http://canthack.org">Martin Ellis</a > <span>Wondering Geek</span>
+* Alan Callaghan
+* <img src="http://i1.wp.com/barcampcanterbury.com/wp-content/uploads/2013/03/TurricanSprites.png?w=584" width="32" height="32"><a href="http://theunixzoo.co.uk" class="alignnone size-full wp-image-460">Edd Barrett</a> <span>CompSci-Python-OpenBSD-Retro</span>
+* Matt Hoskins
+* <img class="alignnone size-full wp-image-460 grav-hashed grav-hijack" alt="out" src="http://www.gravatar.com/avatar/341c531b300cc77f6195b4fb0cb01b9c?s=32" height="32" id="grav-341c531b300cc77f6195b4fb0cb01b9c-0"><a href="http://canthack.org">Tris Linnell</a> <span>#canthacker</span>
 
 </div>
 
@@ -45,7 +49,8 @@ It costs as little as £1 to become a supporter, and have your name enshrined on
 * £10+ You don’t get anything more, just a warm feeling for being awesome.
 * £50 Just become a sponsor already
 
-Just pay through our paypal donate button:
+<ol>
+<li>First pay through our paypal donate button:
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -53,7 +58,11 @@ Just pay through our paypal donate button:
 <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 </form>
- 
+</li>
+
+<li>Email barcampcanterbury@gmail.com with the details you want on your plaque.</li>
+</ol>
+
 ### Ts&Cs: ###
 
 _We reserve the right to moderate any content on this page._<br>
