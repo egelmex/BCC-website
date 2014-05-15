@@ -21,6 +21,7 @@ picture:
       ppi: [1, 1.5]
       attr:
         itemprop: "image"
+        class: "sponsor"
       source_default:
         width: "500"
     img-featurette:

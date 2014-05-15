@@ -191,3 +191,7 @@
 }
 
 body    {overflow-y:scroll;}
+
+.sponsor img {
+	max-width: 100%;
+}
