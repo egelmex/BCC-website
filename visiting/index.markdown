@@ -32,7 +32,7 @@ If you don’t live in Canterbury, you’re going to need somewhere to stay duri
 
 {% endrow %}
 
-* [kipps hostel](ttp://www.kipps-hostel.com/)
+* [kipps hostel](http://www.kipps-hostel.com/)
     * £16 to £20.50 for dorms
     * £22.50 to £26 for Single Rooms
     * £1.50 breakfasts
