@@ -35,7 +35,7 @@ We would like to thank our supporters who have helped to make BarCamp Possible. 
 * <img class="alignnone size-full wp-image-460" alt="out" src="http://barcampcanterbury.com/wp-content/uploads/2013/03/images.jpe" width="0" height="32"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Robert Bronsdon</a>
 * <img src="http://i0.wp.com/barcampcanterbury.com/wp-content/uploads/2013/03/cc.png?resize=32%2C32" alt="cc" class="alignnone size-full wp-image-569" width="32" height="32"><a href="http://www.itscooper.co.uk">Christopher Cooper</a> <span>Security fanatic</span>
 * <img src="http://i1.wp.com/barcampcanterbury.com/wp-content/uploads/2013/03/omer.jpg?resize=32%2C32" alt="omer" class="alignnone size-full wp-image-574" width="32" height="32"><a href="http://canthack.org">Omer Kilic</a>
-* <img src="http://i1.wp.com/barcampcanterbury.com/wp-content/uploads/2013/03/g8osn.jpg?resize=32%2C32" alt="g8osn" class="alignnone size-full wp-image-580" width="32" height="32"><a href="http://www.g8osn.net">Brian Reay</a>
+* <img src="/assets/images/supporters/g8osn2.jpg" alt="g8osn" class="alignnone size-full wp-image-580" width="32" height="32"><a href="http://www.g8osn.net">Brian Reay</a>
 
 </div>
 
