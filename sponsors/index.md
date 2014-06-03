@@ -89,8 +89,12 @@ of Canterbury's geek culture.
 
 <div class="row">
 
-<div class="col-xs-6 col-sm-2 col-sm-offset-5" style="text-align:center">
+<div class="col-xs-4 col-sm-2 col-sm-offset-3 col-xs-offset-2" style="text-align:center">
 <a href="http://piborg.org/">{% picture sponsor piborg.jpg %} </a>
+</div>
+
+<div class="col-xs-4 col-sm-2" style="text-align:center">
+<a href="http://piborg.org/">{% picture sponsor unicorn.jpg %} </a>
 </div>
 
 </div>
