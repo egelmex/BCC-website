@@ -94,7 +94,7 @@ of Canterbury's geek culture.
 </div>
 
 <div class="col-xs-4 col-sm-2" style="text-align:center">
-<a href="http://piborg.org/">{% picture sponsor unicorn.jpg %} </a>
+<a href="http://www.unicorninn.com/">{% picture sponsor unicorn.jpg %} </a>
 </div>
 
 </div>
