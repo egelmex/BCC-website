@@ -1,5 +1,6 @@
 name: Your New Jekyll Site
-baseurl: "http://barcampcanterbury.com"
+url: "http://barcampcanterbury.com"
+baseurl: "/"
 markdown: kramdown
 kramdown:
   parse_block_html: true
