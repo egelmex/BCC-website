@@ -5,7 +5,7 @@
 
 	<!-- Site/Blog Indexes -->
 	<url>
-		<loc>{{ site.url }}</loc>
+		<loc>{{ site.baseurl }}</loc>
 		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
@@ -16,7 +16,7 @@
 	{% endcomment %}{% capture url %}{{ node.url | remove_first:'/' | remove: 'index.html' | split:'/' | first }}{% endcapture %}{% comment %}
 	{% endcomment %}{% if node.noindex != true and url != '' and url != 'blog' %}
 	<url>
-		<loc>{{ site.url }}{{ node.url }}</loc>
+		<loc>{{ site.baseurl}}{{ node.url }}</loc>
 		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
