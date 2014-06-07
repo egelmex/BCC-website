@@ -21,6 +21,7 @@ We would like to thank our supporters who have helped to make BarCamp Possible. 
 * <img class="alignnone size-full wp-image-460 grav-hashed grav-hijack" alt="out" src="/assets/images/supporters/dan.jpeg"> <a href="https://atechmedia.com/careers">Dan Wentworth</a> <span>Love Ruby? Come work with me</span>
 * <img class="alignnone size-full wp-image-460 grav-hashed grav-hijack" alt="out" src="/assets/images/supporters/richard.jpg"> <a href="http://rl0.co.uk/">Richard Lancaster</a>
 * <img src="http://i0.wp.com/barcampcanterbury.com/wp-content/uploads/2013/03/cc.png?resize=32%2C32" alt="cc" class="alignnone size-full wp-image-569" width="32" height="32"><a href="http://www.itscooper.co.uk">Christopher Cooper</a> <span>Security fanatic</span>
+* <a href="http://perlfu.co.uk">Carl Ritson</a> <span>Mad Scientist</span>
 
 </div>
 
