@@ -1,4 +1,5 @@
 ---
+weight: 0
 ---
 User-agent: * 
 {% for node in site.pages %}{% if node.noindex %}{% assign isset = true %}Disallow: {{ node.url }}
