@@ -14,8 +14,8 @@
    height="1011.3964"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="logo.svg"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="logo-with-text.svg"
    inkscape:export-filename="/home/edd/source/barcamp-canterbury-branding/2014/logo.png"
    inkscape:export-xdpi="33.150002"
    inkscape:export-ydpi="33.150002">
@@ -38,15 +38,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.32367912"
-     inkscape:cx="1049.1185"
+     inkscape:cx="1055.2975"
      inkscape:cy="535.77151"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3076"
      showgrid="false"
-     inkscape:window-width="1274"
-     inkscape:window-height="775"
-     inkscape:window-x="1366"
-     inkscape:window-y="22"
+     inkscape:window-width="1596"
+     inkscape:window-height="877"
+     inkscape:window-x="0"
+     inkscape:window-y="19"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -71,7 +71,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -104,7 +104,7 @@
              sodipodi:role="line"
              id="tspan2996"
              x="-221.02223"
-             y="-607.21509">4</tspan></text>
+             y="-607.21509">5</tspan></text>
       </g>
     </g>
     <g
