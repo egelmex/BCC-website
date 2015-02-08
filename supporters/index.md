@@ -8,6 +8,12 @@ weight: 2
 
 We would like to thank our supporters who have helped to make BarCamp Possible. If you would like to become a BarCamp supporter please [see here](#how).
 
+## Supporters 2015 ##
+
+<div class="supporters" id="supporters">
+
+</div>
+
 ## Supporters 2014 ##
 
 <div class="supporters" id="supporters">
