@@ -35,7 +35,7 @@ We would like to thank our supporters who have helped to make BarCamp Possible. 
 * <img class="alignnone size-full wp-image-460 grav-hashed grav-hijack" alt="out" src="http://www.gravatar.com/avatar/596317667dfee01fd0551c2783fcd67c?s=32" height="32" id="grav-596317667dfee01fd0551c2783fcd67c-0"><a href="http://canthack.org">Hannah Greer</a> <span>Geekery, employability, cats.</span>
 * <img src="{{"vext01@gmail.com" | to_gravatar}}" width="32" height="32"><a href="http://soma.fm" class="alignnone size-full wp-image-460">Edd Barrett</a>
 * <img class="alignnone size-full wp-image-460" alt="out" src="{{ "marianne.c.r.everett@gmail.com" | to_gravatar }}" width="32" height="32"><a href="http://canthack.org">Marianne Everett</a>
-* <img class="alignnone size-full wp-image-460" alt="out" src="http://barcampcanterbury.com/wp-content/uploads/2013/03/images.jpe" width="0" height="32"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Robert Bronsdon</a>
+* <img class="alignnone size-full wp-image-460" alt="out" src="{{ "reashlin@gmail.com" | to_gravatar }}" width="32" height="32"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Robert Bronsdon</a>
 * <img src="{{ "chris@itscooper.co.uk" | to_gravatar }}" alt="cc" class="alignnone size-full wp-image-569" width="32" height="32"><a href="http://www.itscooper.co.uk">Christopher Cooper</a> <span>Security fanatic</span>
 * <img src="{{ "omer@kilic.name" | to_gravatar }}" alt="omer" class="alignnone size-full wp-image-574" width="32" height="32"><a href="http://canthack.org">Omer Kilic</a>
 * <img src="/assets/images/supporters/g8osn2.jpg" alt="g8osn" class="alignnone size-full wp-image-580" width="32" height="32"><a href="http://www.g8osn.net">Brian Reay</a>
