@@ -7,6 +7,10 @@
   margin-bottom: 60px;
 }
 
+.image-header {
+	margin-top: 60px;
+}
+
 .carousel:after
 {
     content: " ";
