@@ -1,21 +1,20 @@
 <!-- NAVBAR
 ================================================== -->
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">{% picture icon barcamp4-logo.png %}Barcamp Canterbury</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
+<header class="container-fluid">
+      <!-- Static navbar -->
+      <nav class="navbar navbar-fixed">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">{% picture icon barcamp4-logo.png %}Barcamp Canterbury</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
 		{% sorted_for p in site.pages sort_by:weight %}
 			{% if p.weight == 0 %}
 
@@ -37,28 +36,13 @@
 				{% endif %}
 			{% endif %}
 		{% endsorted_for %}
-		<!--
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
 
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-		-->
-              </ul>
-	     <ul class="navbar-form navbar-right">
-		    <button class="btn btn-success" onclick="location.href='/tickets'">Tickets!</button>
-             </ul>
-            </div>
-          </div>
-        </div>
 
-      </div>
-    </div>
+            </ul>
+            <ul class="nav nav-pills navbar-right">
+		    <li class="active"><button class="btn btn-default navbar-btn btn-success" type="button" onclick="location.href='/tickets'">Tickets!</button></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+</header>
