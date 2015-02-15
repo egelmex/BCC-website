@@ -124,6 +124,7 @@ header {
 @media (min-width: 471px) {
     .navbar-brand {
 	font-size: 25px;
+	padding-top: 7.5px;
     }
     .logo {
 	width: 32px;
