@@ -12,12 +12,13 @@ $(function() {
 	
 		// Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
 		$('a[href*=#]').each(function() {
-	
 			// Ensure it's a same-page link
 			var thisPath = filterPath(this.pathname) || locationPath;
 			if (  locationPath == thisPath
 				&& (location.hostname == this.hostname || !this.hostname)
-				&& this.hash.replace(/#/,'') ) {
+				&& this.hash.replace(/#/,'')
+			        // Check that this isn't a carousel button
+			        && this.hash.indexOf("myCarousel") < 0) {
 	
 					// Ensure target exists
 					var $target = $(this.hash), target = this.hash;
