@@ -6,7 +6,6 @@ weight: 2
 
 ## Sponsors ##
 
-Would you like to sponsor BarCamp Canterbury 2014? If so, please contact us at barcampcanterbury@gmail.com or take a look at our <a href="/assets/Barcamp2014-SponsorLetter.pdf">sponsorship letter</a>.
 
 <div class="row">
 
@@ -20,4 +19,10 @@ The University of Kent will be celebrating its 50th anniversary in October, brin
 </div>
 
 </div>
+<hr>
 
+<div class="row">
+<div class="col-sm-12">
+Would you like to sponsor BarCamp Canterbury 2015? If so, please contact us at <contact@barcampcanterbury.com> or take a look at our <a href="/assets/Barcamp2015-SponsorLetter.pdf">sponsorship letter</a>.
+</div>
+</div>
